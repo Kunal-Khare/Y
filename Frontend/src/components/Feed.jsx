@@ -1,5 +1,6 @@
 import React from "react";
 import CreatePost from "./CreatePost";
+import Tweets from "./Tweets";
 
 function Feed() {
   return (
@@ -7,6 +8,7 @@ function Feed() {
 
       <div>
         <CreatePost />
+        <Tweets />
       </div>
     </div>
   );

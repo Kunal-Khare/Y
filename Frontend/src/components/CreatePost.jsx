@@ -40,6 +40,7 @@ export default CreatePost;
 
 import React from "react";
 import Avatar from "react-avatar";
+import { IoImage } from "react-icons/io5";
 
 function CreatePost() {
   return (
@@ -59,16 +60,26 @@ function CreatePost() {
         </div>
       </div>
       {/* Avatar + Input */}
-      <div className="flex items-start gap-4 m-4 py-0.5">
+      <div className="flex items-start gap-4 m-4 py-4">
         <Avatar
           src="/src/assets/pfp.png"
           googleId="118096717852922241760"
           size="40"
           round={true}
         />
-        <input className="w-full outline-none border-none text-lg py-1.5" 
-        type="text"
-        placeholder="what's up!" />
+        <input
+          className="w-full outline-none border-none text-lg py-1.5"
+          type="text"
+          placeholder="what's up!"
+        />
+      </div>
+      <div className="flex items-center justify-between py-5 border-b border-gray-300">
+        <div>
+          <IoImage className="mx-3"/>
+        </div>
+        <button className="px-4 py-2 mx-3 border-none text-md text-white bg-gray-500 hover:bg-gray-400 hover:cursor-pointer rounded-2xl">
+          Zeke
+        </button>
       </div>
     </div>
   );
