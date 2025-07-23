@@ -1,4 +1,3 @@
-
 // old code ------
 /*
 import React from "react";
@@ -39,31 +38,37 @@ export default CreatePost;
 
 */
 
-
 import React from "react";
 import Avatar from "react-avatar";
 
 function CreatePost() {
   return (
     <div className="w-[100%]">
-      {/* Tabs */}
-      <div className="flex items-center gap-10 m-3">
-        <div className="cursor-pointer">
-          <h1 className="font-bold text-gray-600 text-lg">For you</h1>
-        </div>
-        <div className="cursor-pointer">
-          <h1 className="font-bold text-gray-600 text-lg">Following</h1>
+      <div>
+        <div className="flex items-center justify-evenly border-b border-gray-200 ">
+          <div className="cursor-pointer hover:bg-gray-200 flex-1 text-center">
+            <h1 className="font-semibold text-gray-600 text-lg px-4 py-3">
+              For you
+            </h1>
+          </div>
+          <div className="cursor-pointer hover:bg-gray-200 flex-1 text-center">
+            <h1 className="font-semibold text-gray-600 text-lg px-4 py-3">
+              Following
+            </h1>
+          </div>
         </div>
       </div>
       {/* Avatar + Input */}
-      <div className="flex items-start gap-4 m-3">
+      <div className="flex items-start gap-4 m-4 py-0.5">
         <Avatar
           src="/src/assets/pfp.png"
           googleId="118096717852922241760"
           size="40"
           round={true}
         />
-        <input type="text" />
+        <input className="w-full outline-none border-none text-lg py-1.5" 
+        type="text"
+        placeholder="what's up!" />
       </div>
     </div>
   );
