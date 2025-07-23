@@ -8,7 +8,7 @@ import { IoLogOut } from "react-icons/io5";
 
 function Leftbar() {
   return (
-    <div>
+    <div className="flex w-[20%]">
       <div>
         <div>
           <img width={70} src="src/assets/logo__z_.png" alt="" />
